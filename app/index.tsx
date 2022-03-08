@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { registerSW } from "virtual:pwa-register";
 import ErrorBoundary from "./src/runtime/ErrorBoundry";
-import "./styles/index.css";
+import "styles/index.css";
 
 if ("serviceWorker" in navigator && !/localhost/.test(window.location.toString())) registerSW({
 	immediate: true
