@@ -1,11 +1,11 @@
-import { defineConfig, normalizePath } from "vite";
 import react from "@vitejs/plugin-react";
 import { config } from "dotenv";
-import pjson from "./package.json";
-import manifest from "./app/manifest.json";
-import { VitePWA } from "vite-plugin-pwa";
-import htmlPlugin from "vite-plugin-html-config";
 import path from "path";
+import { defineConfig } from "vite";
+import htmlPlugin from "vite-plugin-html-config";
+import { VitePWA } from "vite-plugin-pwa";
+import manifest from "./app/manifest.json";
+import pjson from "./package.json";
 
 config();
 
@@ -16,7 +16,7 @@ export default defineConfig({
 		VitePWA({
 			srcDir: "app",
 			registerType: "autoUpdate",
-			scope: "/",
+			scope: manifest.base,
 			manifest: <unknown>manifest
 		}),
 		htmlPlugin({
@@ -33,6 +33,7 @@ export default defineConfig({
 			} ]
 		})
 	],
+	base: manifest.base,
 	define: {
 		"PRODUCTION": process.env.NODE_ENV?.toLowerCase() === "production",
 		"APP_MANIFEST": {
