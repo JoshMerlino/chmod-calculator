@@ -6,6 +6,10 @@ import htmlPlugin from "vite-plugin-html-config";
 import { VitePWA } from "vite-plugin-pwa";
 import manifest from "./app/manifest.json";
 import pjson from "./package.json";
+import manifest, { base } from "./app/manifest.json";
+import { VitePWA } from "vite-plugin-pwa";
+import htmlPlugin from "vite-plugin-html-config";
+import path from "path";
 
 config();
 
@@ -16,7 +20,7 @@ export default defineConfig({
 		VitePWA({
 			srcDir: "app",
 			registerType: "autoUpdate",
-			scope: manifest.base,
+			scope: base,
 			manifest: <unknown>manifest
 		}),
 		htmlPlugin({
@@ -33,7 +37,7 @@ export default defineConfig({
 			} ]
 		})
 	],
-	base: manifest.base,
+	base,
 	define: {
 		"PRODUCTION": process.env.NODE_ENV?.toLowerCase() === "production",
 		"APP_MANIFEST": {
