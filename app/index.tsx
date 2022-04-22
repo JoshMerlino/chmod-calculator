@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "styles/index.css";
 import { registerSW } from "virtual:pwa-register";
 import { base } from "./manifest.json";
 import ErrorBoundary from "./src/runtime/ErrorBoundry";
-import "styles/index.css";
 
 if ("serviceWorker" in navigator && !/localhost/.test(window.location.toString())) registerSW({
 	immediate: true
