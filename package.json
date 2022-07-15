@@ -27,7 +27,7 @@
         "build": "tsc -p tsconfig.node.json && tsc && vite build && cp public_html/index.html public_html/404.html"
     },
     "dependencies": {
-        "async-require-context": "^1.8.13",
+        "async-require-context": "^1.8.15",
         "chalk": "5.x.x",
         "compression": "^1.7.4",
         "cookie-parser": "^1.4.6",
