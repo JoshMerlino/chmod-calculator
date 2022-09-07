@@ -69,7 +69,7 @@
         "typescript": "^4.8.2",
         "vite": "^3.1.0",
         "vite-plugin-html-config": "^1.0.10",
-        "vite-plugin-pwa": "^0.12.6",
+        "vite-plugin-pwa": "^0.12.7",
         "web-manifest-reader": "^1.2.3"
     }
 }
