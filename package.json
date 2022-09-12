@@ -49,7 +49,7 @@
         "@typescript-eslint/eslint-plugin": "^5.36.2",
         "@typescript-eslint/parser": "^5.36.2",
         "@vitejs/plugin-react": "^2.1.0",
-        "autoprefixer": "^10.4.8",
+        "autoprefixer": "^10.4.9",
         "chokidar": "^3.5.3",
         "concurrently": "^7.4.0",
         "eslint": "^8.23.0",
