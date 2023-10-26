@@ -1,6 +1,6 @@
 {
 	"name": "vite-project",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Create fast single-page progressive-web-apps using PhotonCSS 12, React and TypeScript.",
 	"main": "lib/src",
 	"types": "lib/src",
@@ -40,7 +40,7 @@
 		"@types/cookie-parser": "^1.4.5",
 		"@types/cors": "^2.8.15",
 		"@types/express": "^4.17.20",
-		"@types/node": "^20.8.8",
+		"@types/node": "^20.8.9",
 		"@types/node-fetch": "^2.6.2",
 		"@types/react": "^18.2.31",
 		"@types/react-dom": "^18.2.14",
